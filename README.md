@@ -10,7 +10,7 @@ Made by John Aslani
 
 ## Screenshot
 
-![Screenshot](./assets/Screenshot.PNG)
+![Screenshot](./Assets/Screenshot.png)
 
 ## Link to deployed application
 
