@@ -11,7 +11,10 @@ function generatePassword() {
     return null;
   }
   // console.log(passlength);
-  
+  if (passlength <8 || passlength >128) {
+    alert("Password length must be a number between 8 and 128");
+    return null;
+  }
 
   var numberChars = "0123456789";
   var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -27,8 +30,10 @@ function generatePassword() {
   if (uppercase) allChars += upperChars;
   if (lowercase) allChars += lowerChars;
   if (number) allChars += numberChars;
-  if (!special && !uppercase && !lowercase && !number) { alert("Password needs to select at least one type of character");
-  return null;};
+  if (!special && !uppercase && !lowercase && !number) { 
+      alert("Password needs to select at least one type of character");
+      return null;
+  };
   // console.log(allChars.length);
   // console.log("allChars", allChars);
  var PW = Array(passlength);
